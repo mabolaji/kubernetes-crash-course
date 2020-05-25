@@ -6,6 +6,7 @@ COPY pom.xml ./
 COPY src ./src/
 # Build a release artifact.
 RUN mvn package -DskipTests
+RUN ls
 
 VOLUME /tmp
 EXPOSE 8080
